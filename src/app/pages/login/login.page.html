@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+<!--      <ion-item>-->
+      <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+        <ion-label>Usuario</ion-label>
+        <ion-input type="email" class="form-control" id="exampleInputEmail1" formControlName="username" placeholder="Eje: mauriciovilla"></ion-input>
+<!--      </ion-item>-->
+<!--      <ion-item>-->
+        <ion-label>Contraseña</ion-label>
+        <ion-input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Contraseña"></ion-input>
+<!--      </ion-item>-->
+<!--      <ion-input type="checkbox" class="form-check-input" id="exampleCheck1"></ion-input>-->
+        <ion-button type="submit" class="btn btn-primary">Ingresar</ion-button>
+<!--      ¿Nuevo cliente?  <a routerLink="/create_account">Crear cuenta</a>-->
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

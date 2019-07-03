@@ -1,0 +1,7 @@
+{
+  "name": "shared_notes_mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
